@@ -1,0 +1,27 @@
+utilizamos backtracking para resolver o puzzle.
+
+o modulo Main apenas chama as funcoes contidas no modulo 'Solucionador', o 
+
+modulo matriz serve apenas para abrigar funções necessarias para manipulação das matrizes. 
+
+o modulo Solucionador, contem os principais metodos para resolucao do problema. 
+
+metodos chamados em ordem:
+
+solveMatrix
+|
+v
+solveLine
+|
+v
+solveElement
+|
+v
+validatenumber -> validatecolumn 
+|		-> validadeadjacents
+v				|
+validadeline			v
+			     validateright  |
+			     validadeleft   |_>validadeoperation
+			     validatedown   |
+			     validadeup     |      
